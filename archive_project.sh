@@ -21,9 +21,9 @@ then
 	mkdir $BASE/archive
 fi
 
-#Find the list of files larger than 20MB
+#Find the list of files larger than 10MB
 
-for i in `find $BASE -maxdepth $DEPTH -type f -size +20MB`
+for i in `find $BASE -maxdepth $DEPTH -type f -size +10MB`
 do
 	if[ $RUN -eq 0 ]
 	then
